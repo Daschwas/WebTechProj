@@ -38,7 +38,6 @@
       }
 
 
-
       h2 {
         font-size: 2em;
         font-weight: bold;
@@ -94,8 +93,20 @@
         margin-bottom: 15px;
       }
 
+      .footer-links {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+
+      .footer-links li {
+        display: inline;
+        margin: 0 10px;
+      }
+
+      /*Mobile Style*/
       @media (max-width: 768px) {
-        .navigation-header {
+        .navigation-header, .logo {
           display: none;
         }
         .page-header
@@ -103,6 +114,18 @@
         max-width: 768px;
           margin: 0 auto;
           padding: 5px 0;
+        }
+
+        .page-footer
+        {font-size: 9px;
+          max-width: 768px;
+          margin: 0 auto;
+          padding: 5px 0;
+        }
+
+        .footer-links li {
+          display: inline;
+          margin: 0 5px;
         }
       }
 
@@ -197,13 +220,13 @@
 
 
   </main>
-  <footer>
+  <footer class="page-footer">
     <div>
-      <img src="https://placehold.co/64?text=logo" alt="Logo">
+      <img class = "logo" src="https://placehold.co/64?text=logo" alt="Logo">
       <p>© Copyright 2023 Adrian Gould and Dale Schwass. All rights reserved.</p>
     </div>
     <div>
-      <ul>
+      <ul class = "footer-links">
         <li><a href="#">North Metro TAFE</a></li>
         <li><a href="#">ScreenCraft Dev Sites</a></li>
         <li><a href="#">Contact Us</a></li>
