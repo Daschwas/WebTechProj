@@ -87,6 +87,7 @@
         margin-bottom: 20px;
         break-inside: avoid;
         column-count: 2;
+        word-break: break-word;
       }
 
       p {
@@ -110,14 +111,43 @@
           display: none;
         }
         .page-header
-        {font-size: 9px;
+        {font-size: .5em;
         max-width: 768px;
           margin: 0 auto;
           padding: 5px 0;
         }
 
+        .body-header
+        {font-size: .8em;
+          max-width: 768px;
+          margin: 0 auto;
+          padding: 5px 0;
+        }
+
+        .preamble {font-size: .75em;}
+
+        .grid-container
+        {font-size: .8em;
+          max-width: 768px;
+          margin: 0 auto;
+          padding: 5px 0;
+
+        }
+
+        .article-odd, .article {
+          grid-column: span 2;
+          column-count: 1;
+          word-break: break-word;
+        }
+
+        .copyright-footer {
+          font-size: .5em;
+          max-width: 768px;
+          margin: 0 auto;
+          padding: 5px 0;
+        }
         .page-footer
-        {font-size: 9px;
+        {font-size: .5em;
           max-width: 768px;
           margin: 0 auto;
           padding: 5px 0;
@@ -137,7 +167,7 @@
   <header class = "page-header">
     <div>
       <h1>Certificate IV in IT (Programming) Web Tech Portfolio</h1>
-      <img src="https://placehold.co/64?text=logo" alt="Logo">
+      <img class = "logo" src="https://placehold.co/64?text=logo" alt="Logo">
     </div>
     <nav class="navigation-header">
       <ul>
@@ -154,7 +184,7 @@
 
         <header>
           <h2 class="body-header">Teacher + Student = dumb and dumber</h2></header>
-        <p>This content is derived from APC Magazine, November 2007.
+        <p class = "preamble">This content is derived from APC Magazine, November 2007.
 
           We had no idea there were so many dumb IT trainers and students out there.
 
@@ -213,7 +243,7 @@
         </div>
 
         </div>
-        <footer>
+        <footer class = "copyright-footer">
           Content is provided with permission from APC Magazine (TechRadar.com) for the
           purposes of education and training. Content is Copyright 2007 APC Magazine.
         </footer>
