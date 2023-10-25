@@ -14,6 +14,13 @@
         padding: 10px 0;
     }
 
+    .page-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
 
     header nav ul {
         list-style: none;
@@ -87,6 +94,48 @@
         margin-bottom: 15px;
     }
 
+    aside {
+        grid-column: 3 / 4;
+        background-color: #f8f8f8;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        right: 0;
+        position: fixed;
+    }
+
+    aside section {
+        margin-bottom: 30px;
+    }
+
+    aside section header,
+    aside section footer {
+        background-color: #1A1A2E;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    aside section header {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    aside section footer {
+        font-size: 0.8em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .section-content {
+        font-size: 0.8em;
+        margin-bottom: 10px;
+        font-family: "Segoe UI", sans-serif;
+        padding: 0;
+        border: 1px solid #ccc;
+    }
+
+
     .footer-links {
         list-style: none;
         padding: 0;
@@ -101,7 +150,7 @@
 
 /*Mobile Style*/
 @media screen and (max-width: 768px) {
-    .navigation-header, .logo {
+    .navigation-header, .logo, aside {
         display: none;
     }
 
