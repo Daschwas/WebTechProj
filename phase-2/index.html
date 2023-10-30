@@ -77,15 +77,8 @@
         break-inside: avoid;
       }
 
-      .article-odd {
+      .article:nth-child(odd):not(:first-child) {
         grid-column: span 2;
-        padding: 10px;
-        background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        box-sizing: border-box;
-        margin-bottom: 20px;
-        break-inside: avoid;
         column-count: 2;
         word-break: break-word;
       }
@@ -118,7 +111,7 @@
   <header class = "page-header">
     <div>
       <h1>Certificate IV in IT (Programming) Web Tech Portfolio</h1>
-      <img class = "logo" src="https://placehold.co/64?text=logo" alt="Logo">
+      <img class = "logo" src="../assets/img/Logo.jpg" alt="logo" width="155.6" height="64"/>
     </div>
     <nav class="navigation-header">
       <ul>
@@ -164,7 +157,7 @@
               should be turned on. After I explained it, she told me that she was about to
               present a talk on internet security."</p>
           </div>
-          <div class="article-odd">
+          <div class="article">
         <h4> TUTORING THE TUTOR</h4>
           <p>Neil Meyers, library assistant from Gilles Plains in SA, recalls an incident
             with a part-time computer lecturer a couple of years ago.</p>
@@ -225,12 +218,9 @@
 
   </main>
 
-
-
-
   <footer class="page-footer">
     <div>
-      <img class = "logo" src="https://placehold.co/64?text=logo" alt="Logo">
+      <img class = "logo" src="../assets/img/Logo.jpg" alt="Logo" width="155.6" height="64">
       <p>© Copyright 2023 Adrian Gould and Dale Schwass. All rights reserved.</p>
     </div>
     <div>
