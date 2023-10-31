@@ -4,7 +4,5 @@
 | white    | 255, 255, 255  | #FFFFFF |
 | navy     | 26, 26, 46     | #1A1A2E |
 | grey     | 240, 240, 240  | #f0f0f0 |
-| cream    | 255, 255, 255  | #FFFFFF |
-| olive    | 46, 46, 26     | #2e2e1a |
 | green    | 36, 46, 26     | #242e1a |
 | brown    | 46, 36, 26     | #2e241a |
