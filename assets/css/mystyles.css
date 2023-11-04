@@ -225,9 +225,14 @@
             }
 
 
-            #quoteDisplay {
-                margin-top: 20px;
-                font-size: 18px;
+            #quotePlaceholder {
+                background-color: #f2f2f2 ;
+                border-radius: 4px;
+                text-align: center;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                margin: 0 auto;
+                font-size: 1.2em;
+                line-height: 1.4;
             }
 
 

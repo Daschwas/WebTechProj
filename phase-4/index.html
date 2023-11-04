@@ -12,6 +12,7 @@
     </style>
     <link rel="stylesheet" href="../assets/css/necolas-normalize.css">
     <link rel="stylesheet" href="../assets/css/mystyles.css">
+
   </head>
   <body>
   <header class = "page-header">
@@ -24,8 +25,8 @@
         <li><a href="../index.html">Home</a></li>
         <li><a href="../phase-1/index.html">Phase 1</a></li>
         <li><a href="../phase-2/index.html">Phase 2</a></li>
-        <li><a href="index.html">Phase 3</a></li>
-        <li><a href="phase-4">Phase 4</a></li>
+        <li><a href="../phase-3/index.html">Phase 3</a></li>
+        <li><a href="index.html">Phase 4</a></li>
         <li><a href="phase-5">Phase 5</a></li>
       </ul>
     </nav>
@@ -195,54 +196,7 @@
       </ul>
     </div>
   </footer>
-
-
-    <script>
-      function getQuotes() {
-        try {
-          let selectedValue = document.querySelector('input[name="numberOfQuotes"]:checked').value;
-          console.log('Selected value:', selectedValue);
-
-          let apiUrl = 'https://api.api-ninjas.com/v1/quotes?category=computers&limit=' + selectedValue;
-
-          fetch(apiUrl, {
-            method: 'GET',
-            headers: {
-              'X-Api-Key': 'al/zHrzPIddGWNtdwcS+Kg==J6DqkicNGsAU45le'
-            },
-            contentType: 'application/json'
-          })
-                  .then(function(response) {
-                    return response.json();
-                  })
-                  .then(function(data) {
-                    console.log(data);
-
-                    if (selectedValue !== 1 && data.length === 1) {
-                      console.log('Only one quote retrieved');
-                    }
-
-                    let quoteText = data.map(function(quoteData) {
-                      return `"${quoteData.quote}" - ${quoteData.author}`;
-                    }).join('<br>'+'<br>');
-
-                    let quotePlaceholder = document.getElementById('quotePlaceholder');
-                    quotePlaceholder.innerHTML = quoteText;
-                    })
-
-                  .catch(function(error) {
-                    console.error('An error occurred in connecting to API:', error);
-                  });
-
-        } catch (error) {
-          console.error('An error occurred in getting quotes:', error);
-        }
-      }
-
-      document.getElementById('getQuotesButton').addEventListener('click', getQuotes);
-
-    </script>
-
+  <script src="../assets/js/myscripts.js"></script>
 
   </body>
 
