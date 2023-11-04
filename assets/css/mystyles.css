@@ -148,6 +148,7 @@
             margin: 0 10px;
         }
 
+
 /*Desktop Style*/
     @media screen and (min-width: 769px) {
 
@@ -197,6 +198,38 @@
                 padding: 0;
                 border: 1px solid #ccc;
             }
+
+        /* HTML Form Styles*/
+            label {
+                font-weight: bold;
+            }
+
+            input[type="radio"] {
+                margin-right: 10px;
+                margin-left: 2px;
+            }
+
+            button {
+                background-color: #1A1A2E;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-bottom: 10px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            button:hover {
+                background-color: #1A2A2E;
+            }
+
+
+            #quoteDisplay {
+                margin-top: 20px;
+                font-size: 18px;
+            }
+
 
     }
 
