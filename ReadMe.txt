@@ -6,3 +6,10 @@
 | grey     | 240, 240, 240  | #f0f0f0 |
 | green    | 36, 46, 26     | #242e1a |
 | brown    | 46, 36, 26     | #2e241a |
+
+Tailwind components:
+-Card(Vertical)
+-Navigation Bar (Tabbed)
+-Button (Push in)
+-Sticky Header
+-Simple Footer
