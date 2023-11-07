@@ -10,6 +10,7 @@
 Tailwind components:
 -Card(Vertical)
 -Navigation Bar (Tabbed)
--Button (Push in)
 -Sticky Header
 -Simple Footer
+
+Tested dashboard on Google Chrome and Mozilla Firefox
