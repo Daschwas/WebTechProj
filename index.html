@@ -8,39 +8,15 @@
     <title>Dale Schwass | Web Tech | Cert 4 Prog</title>
 
     <link rel="stylesheet" href="assets/css/site.css">
-    <style>
-        .grid-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        @media (max-width: 768px) {
-            .grid-container {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-
-            }
-
-            .sticky {
-                flex-direction: row;
-                align-items: center;
-                text-align: center;
-            }
-
-        }
-
-    </style>
 </head>
 <body>
-<div class="sticky top-0 flex flex-col justify-between p-6 mx-auto md:flex-row gap-2 bg-gray-800 text-gray-200">
+<header class="sticky top-0 flex flex-col justify-between p-6 mx-auto md:flex-row gap-2 bg-gray-800 text-gray-200">
     <a class="flex items-center mb-4 font-medium title-font md:mb-0 gap-2">
         <h1 class="text-sm">Certificate IV in IT (Programming) Web Tech Portfolio</h1>
     </a>
-    <img class="h-6 mr-3" src="assets/img/Logo.jpg" alt="logo">
-</div>
-<div class="border-b border-gray-200 dark:border-gray-700">
+    <img class="w-12 h-6 mr-3 md:hidden" src="assets/img/Logo.jpg" alt="logo">
+</header>
+<section class="border-b border-gray-200 dark:border-gray-700">
     <nav class="flex space-x-2">
         <a class="-mb-px py-3 px-4 inline-flex items-center gap-2 bg-white text-sm font-medium text-center border border-b-transparent text-blue-600 rounded-t-lg dark:bg-gray-800 dark:border-gray-700 dark:border-b-gray-800 dark:hover:text-gray-400" href="index.html">
             Home
@@ -61,34 +37,32 @@
             Phase 5
         </a>
     </nav>
-</div>
+</section>
 <main>
-    <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Certificate IV in IT (Programming) Web Tech Portfolio</h1>
+    <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-center text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Certificate IV in IT (Programming) Web Tech Portfolio</h1>
 
 
-    <div class="grid-container">
-        <div class="w-1/4 border border-gray-500 flex flex-col gap-4 p-4">
-            <div class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
+    <article class="grid-container">
+        <section class="w-max border border-gray-500 flex flex-col gap-4 p-4 mb-4 items-center">
+            <header class="bg-gray-800 text-gray-200 p-4 -m-4 mb-0">
                 <p> Web Technologies Portfolio as implemented by Dale Schwass</p>
-            </div>
-            <div class="flex flex-col gap-4">
-            </div>
-            <div class="bg-gray-200 text-gray-800 p-6 -m-4 mt-0 items-center">
+            </header>
+            <nav class="w-max bg-gray-200 text-gray-800 p-6 -m-4 mt-0 items-center">
                     <a href="phase-1/index.html">Phase 1 /</a>
                     <a href="phase-2/index.html">Phase 2 /</a>
                     <a href="phase-3/index.html">Phase 3 /</a>
                     <a href="phase-4/index.html">Phase 4 /</a>
                     <a href="phase-5/index.html">Phase 5 </a>
-            </div>
-        </div>
+            </nav>
+        </section>
 
 
-    </div>
+    </article>
 
 </main>
 
-<footer class="bg-white dark:bg-gray-900">
-    <div class="text-gray-400 bg-gray-800 body-font
+<section class="bg-white dark:bg-gray-900">
+    <footer class="text-gray-400 bg-gray-800 body-font
     w-full flex flex-col items-start justify-between p-4
             mx-auto md:flex-row gap-2">
         <a class="flex items-center mb-4 font-medium title-font md:mb-0 gap-2
@@ -96,21 +70,21 @@
             <img src="assets/img/Logo.jpg" alt="Logo" class="h-6">
             <h1 class="text-sm">Dale Schwass | Web Tech | Cert 4 Prog</h1>
         </a>
-        <div class="flex flex-wrap text-sm pl-6 ml-6 text-base
+        <footer class="flex flex-wrap text-sm pl-6 ml-6 text-base
                 border-l border-gray-400 grow ">
             <p class="m-auto">
                 © Copyright 2023 Adrian Gould and Dale Schwass. All rights reserved.
             </p>
-        </div>
-        <div class="flex flex-wrap text-sm pl-6 ml-6 text-base border-l border-gray-400
+        </footer>
+        <nav class="flex flex-wrap text-sm pl-6 ml-6 text-base border-l border-gray-400
                 md:mr-auto gap-2">
             <a href="#" class="border-b border-gray-300 hover:border-blue-500 hover:text-blue-500 transition duration-500 ease-in-out">North Metro TAFE</a>
             <a href="#" class="border-b border-gray-300 hover:border-blue-500 hover:text-blue-500 transition duration-500 ease-in-out">ScreenCraft Dev Sites</a>
             <a href="#" class="border-b border-gray-300 hover:border-blue-500 hover:text-blue-500 transition duration-500 ease-in-out">Contact Us</a>
             <a href="pages/copyright.html" class="border-b border-gray-300 hover:border-blue-500 hover:text-blue-500 transition duration-500 ease-in-out">Copyright</a>
-        </div>
-    </div>
-</footer>
+        </nav>
+    </footer>
+</section>
 
 
 

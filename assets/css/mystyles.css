@@ -130,6 +130,7 @@
             margin: 0 auto;
         }
 
+
         .article {
             grid-column: span 1;
             padding: 10px;
@@ -319,6 +320,5 @@
         .footer-links li {
             margin: 0 5px;
         }
-
 
     }
