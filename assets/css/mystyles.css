@@ -85,6 +85,21 @@
             width: 100%;
             bottom: 0;
         }
+
+        .hamburger-menu {
+            display: none;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .hamburger-line {
+            width: 30px;
+            height: 5px;
+            background-color: #fff;
+            margin: 6px 0;
+        }
     /*Heading Styles*/
         h2 {
             font-size: 2em;
@@ -240,8 +255,12 @@
 
 /*Mobile Style*/
     @media screen and (max-width: 768px) {
-        .navigation-header, .logo, aside {
+        .navigation-links, .logo, aside {
             display: none;
+        }
+
+        .hamburger-menu {
+            display: block;
         }
 
         .page-header {
